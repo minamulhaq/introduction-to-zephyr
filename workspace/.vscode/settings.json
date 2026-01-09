@@ -1,3 +1,4 @@
 {
     "cmake.ignoreCMakeListsMissing": true,
+    "idf.pythonInstallPath": "/Users/muhammadinamulhaq/.venv/3_13/bin/python",
 }
