@@ -1,38 +1,39 @@
-# Specify a minimum CMake version
-cmake_minimum_required(VERSION 3.20.0)
 
-# Name the project
+cmake_minimum_required(VERSION 3.20)
+
 project(
-    hello_world
-    VERSION 1.0
-    DESCRIPTION "The classic"
+    cmake_demo
+    VERSION 1.0.0
+    DESCRIPTION "Classis first cmake"
     LANGUAGES C
 )
 
-# Create a static library target named "my_lib"
-add_library(my_lib
+set (MY_LIB "mylib")
+set (C_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/say_hello.c)
+set (LIB_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Create static library
+add_library(
+    ${MY_LIB}
     STATIC
-    src/my_lib.c
+    ${C_SOURCES}
 )
 
-# Set the include directories for the library. PUBLIC adds the directory
-# to the search path for any targets that link to this library.
 target_include_directories(
-    my_lib
+    ${MY_LIB}
     PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${LIB_INCLUDES}
 )
 
-# Create an executable target with the same name as the project name
+
 add_executable(
     ${PROJECT_NAME}
     src/main.c
 )
 
-# Link the library to the executable. PRIVATE means that the library is not
-# exposed to targets that depend on this target.
+
 target_link_libraries(
     ${PROJECT_NAME}
     PRIVATE
-    my_lib
+    ${MY_LIB}
 )

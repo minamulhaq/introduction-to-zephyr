@@ -1,8 +1,6 @@
-#include "my_lib.h"
+#include "say_hello.h"
 
-int main()
-{
+int main() {
     say_hello();
-
     return 0;
-}
+} 
