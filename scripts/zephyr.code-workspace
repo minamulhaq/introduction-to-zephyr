@@ -28,5 +28,12 @@
             "nordic-semiconductor.nrf-devicetree",
             "ms-vscode.hexeditor"
         ]
-    }
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/opt/toolchains/zephyr/include",
+        "/opt/toolchains/modules/**"
+    ],
+    "C_Cpp.default.compilerPath": "/usr/bin/arm-none-eabi-gcc",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-arm"
 }

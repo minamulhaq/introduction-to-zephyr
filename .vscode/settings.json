@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "D:/Projects/GitHub/introduction-to-zephyr/workspace/apps/08_demo_multithreading"
+    "cmake.sourceDirectory": "D:/Projects/GitHub/introduction-to-zephyr/workspace/apps/08_demo_multithreading",
+    "cmake.ignoreCMakeListsMissing": true
 }
