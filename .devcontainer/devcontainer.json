@@ -14,7 +14,5 @@
     },
     "forwardPorts": [],
     "workspaceFolder": "/workspace",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-    "workspaceFile": "/zephyr.code-workspace",
     "remoteUser": "root"
 }

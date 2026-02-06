@@ -15,7 +15,6 @@
     ],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
-        "workbench.colorTheme": "Visual Studio Dark - C++",
         "files.associations": {
             "lvgl_input_device.h": "c",
             "lvgl.h": "c"
